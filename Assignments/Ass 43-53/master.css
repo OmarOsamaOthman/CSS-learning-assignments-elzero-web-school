@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #175dc6;
+    color: #FFF;
+
+}
+
+:root {
+    --mainColor: #009688;
+    --first-ele-background-color: #18815e;
+    --second-ele-background-color: #C78C18;
+    --first-border-color: yellowgreen;
+    --second-border-color: #ffc272;
+    --mainPadding: 10px;
+    --third-ass-main-color: #009688;
+    --third-ass-main-padding: 10px;
+    --main-Color: #009688;
+    --main-Padding: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+header h1 {
+    background-color: var(--first-ele-background-color, blue);
+    width: fit-content;
+    margin: auto;
+    padding: 7px 13px;
+    border-right: solid var(--first-border-color, yellowgreen) 5px;
+    border-left: solid var(--first-border-color, yellowgreen) 5px;
+    border-radius: 7px;
+}
+
+section .ass-header {
+    background-color: var(--second-ele-background-color, green);
+    width: fit-content;
+    padding: 7px 15px;
+    border-right: solid var(--second-border-color, yellowgreen) 5px;
+    border-left: solid var(--second-border-color, yellowgreen) 5px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+main section article {
+    background-color: var(--first-ele-background-color, blue);
+    padding: 20px;
+    margin: 0 100px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.parent {
+    display: flex;
+    background-color: #EEE;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.ass-one .container div {
+    color: #ff7300;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #DDD;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0 0 0 #ff7300, -5px 0 0 0 #0084ff;
+    font-weight: bold;
+}
+
+
+.ass-two .parent {
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+
+}
+
+.ass-two .parent div {
+    display: flex;
+    width: calc(96%/3);
+    background-color: #ff3c00;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+
+.ass-three .container .parent {
+    flex-flow: wrap-reverse row-reverse;
+    justify-content: space-between;
+}
+
+.ass-three .container .parent div {
+    background-color: #607d8b;
+    width: calc(94%/3);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-three .container .parent .one {
+    order: 1;
+    align-self: flex-start;
+}
+
+.ass-three .container .parent .two {
+    order: 2;
+}
+
+.ass-three .container .parent .three {
+    order: 5;
+    align-self: flex-end;
+}
+
+.ass-three .container .parent .four {
+    order: 4;
+}
+
+.ass-three .container .parent .five {
+    order: 3;
+}
+
+.ass-three .container .parent .six {
+    order: 6;
+}
+
+.ass-four .container .parent {
+    flex-flow: column;
+    align-items: flex-end;
+
+}
+
+.ass-four .container .parent div {
+    display: flex;
+    background-color: #009688;
+    padding: 10px;
+    flex-basis: calc(94% /3);
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-four .container .parent .two {
+    width: calc(50%);
+    align-self: flex-start;
+}
+
+
+
+
+.ass-five .container .parent {
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ass-five .container .parent div {
+    display: flex;
+    padding: 10px;
+    width: calc(65%/4);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-five .container .parent .one {
+    background-color: #ff9800;
+    order: 2;
+
+}
+
+.ass-five .container .parent .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.ass-five .container .parent .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.ass-five .container .parent .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.ass-six .header,
+.ass-six .main-area,
+.ass-six .footer,
+.ass-six div,
+.ass-six ul,
+.ass-six li {
+    display: flex;
+}
+
+.ass-six .parent {
+    flex-flow: column;
+    justify-content: space-between;
+    color: black;
+    width: 100%;
+}
+
+
+.ass-six .header {
+    /* justify-content: stretch; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: #DDD;
+    padding: 10px 30px;
+}
+
+ul {
+    background-color: #DDD;
+    padding: 10px;
+    display: flex;
+    flex-basis: 93.1%;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+li {
+    display: flex;
+}
+
+
+
+
+.main-area {
+    flex-grow: 0.90;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.ass-six .content {
+    padding: 10px;
+    background-color: #DDD;
+    flex-basis: 75%;
+}
+
+.ass-six .sidebar {
+    padding: 10px;
+    flex-basis: 24%;
+    background-color: #DDD;
+}
+
+
+
+
+.ass-six .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DDD;
+
+}
+
+.ass-six .footer div {
+    padding: 10px;
+}

@@ -1,0 +1,147 @@
+h1 {
+    background-color: aqua;
+
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-left: 425px;
+    width: fit-content;
+    padding: 7px 13px;
+
+    font-size: 50px;
+
+}
+
+
+.assfs {
+    background-color: rgb(53, 115, 173);
+
+    margin-left: 4%;
+    width: fit-content;
+
+    border-left: 5px solid black;
+    border-radius: 3px;
+
+    padding: 3px 6px;
+    font-size: 30px;
+}
+
+.assfs_contener,
+.assse_contener,
+.assth_contener,
+.assfo_contener {
+    background-color: #a5a5a5;
+    margin: 5px 130px;
+
+    border: 20px solid #a5a5a5;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.assfs_contener h2 {
+    text-shadow: 1px 1px 0 red, 1.5px 1.5px 0 blue, 2px 2px 0 blueviolet;
+    text-align: center;
+    font-size: 40px;
+}
+
+.assse_contener p .three {
+    margin: 0 0 0 0;
+}
+
+.assse_contener p {
+    text-align: center;
+
+    margin: 0 0 20px 0;
+
+    font-size: 30px;
+}
+
+
+
+.assse_contener .one,
+.assse_contener .two,
+.assse_contener .three {
+    background-color: antiquewhite;
+
+    border-radius: 30px;
+
+}
+
+.assfo_contener {
+    height: 100px;
+}
+
+.assse_contener .one {
+    text-transform: uppercase;
+}
+
+.assse_contener .two {
+    text-transform: capitalize;
+}
+
+.assse_contener .three {
+    text-transform: lowercase;
+
+    margin-bottom: 0;
+}
+
+
+.assth_contener .ele1 {
+    width: 400px;
+    white-space: normal;
+    margin-left: 100px;
+}
+
+.assth_contener .ele2 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.assth_contener .ele3 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 100px;
+}
+
+
+.B_cont_assth .ex {
+    background-color: rgb(175, 180, 72);
+    margin-left: 10%;
+    width: fit-content;
+
+
+    padding: 5px 10px;
+
+    border-left: 5px solid blue;
+    border-radius: 4px;
+}
+
+.assfo_contener a {
+    color: white;
+    background-color: rgb(34, 141, 121);
+
+    text-decoration: none;
+
+    padding: 30px 50px;
+    margin: -9px 0 0 40%;
+
+    font-size: 40px;
+    text-transform: capitalize;
+    border-bottom: 15px solid rgb(23, 66, 65);
+
+    display: inline-block;
+}
+
+.copyr {
+    font-size: 12px;
+    margin-right: 150px;
+    text-align: right;
+
+}

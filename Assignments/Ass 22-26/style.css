@@ -1,0 +1,104 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    color: #ffc400;
+    background-color: rgb(14, 51, 83);
+}
+
+.big-title {
+    margin: 30px 0 0 500px;
+    padding: 5px 10px;
+    background-color: #a5a5a551;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    width: fit-content;
+}
+
+h2 {
+    color: white;
+    margin: 50px 0 0 150px;
+    width: fit-content;
+    padding: 5px 15px;
+    border-left: 5px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #a5a5a551;
+}
+
+div .ele {
+    display: block;
+    background-color: #ffc4003d;
+    margin: 20px 230px;
+    min-height: 70px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.assfs-contaner .ele-fsass {
+    padding: 30px;
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
+.ele-fsass p {
+    color: white;
+    background-color: rgba(250, 235, 215, 0.242);
+    border: inherit;
+    padding: inherit;
+    border-radius: inherit;
+}
+
+.assse-contaner .ele .ele1,
+.assse-contaner .ele .ele2,
+.assse-contaner .ele .ele3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.assse-contaner .ele .ele1 {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.assse-contaner .ele .ele2 {
+    font-family: "cairo", sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.assse-contaner .ele .ele3 {
+    font-family: "Jomhuria", serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.assth-contaner .ele1,
+.assth-contaner .ele2,
+.assth-contaner .ele3 {
+    margin-left: 20px;
+
+}
+
+
+.assth-contaner .ele1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.assth-contaner .ele2 {
+    font-size: 2rem;
+}
+
+.assth-contaner .ele3 {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #175dc6;
+    color: #FFF;
+}
+
+:root {
+    --mainColor: #009688;
+    --first-ele-background-color: #18815e;
+    --second-ele-background-color: #C78C18;
+    --first-border-color: yellowgreen;
+    --second-border-color: #ffc272;
+    --mainPadding: 10px;
+    --third-ass-main-color: #009688;
+    --third-ass-main-padding: 10px;
+    --main-Color: #009688;
+    --main-Padding: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header h1 {
+    padding: 10px 20px;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--first-ele-background-color, yellowgreen);
+    border-right: solid 5px rgb(191, 255, 63);
+    border-left: solid 5px rgb(191, 255, 63);
+    border-radius: 5px;
+}
+
+section {
+    background-color: var(--first-ele-background-color);
+    padding: 10px;
+    margin: 20px 0 50px 0;
+}
+
+section h2 {
+    background-color: var(--second-ele-background-color, yellowgreen);
+    width: fit-content;
+    margin-left: 50px;
+    padding: 5px 10px;
+    border-right: 5px solid var(--second-border-color, yellowgreen);
+    border-left: 5px solid var(--second-border-color, yellowgreen);
+    border-radius: 5px;
+
+}
+
+section .contianer {
+    margin-left: 100px;
+    background-color: #115b42;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+
+.ass-fir .contianer {
+    padding: 10px 20px 20px;
+}
+
+.ass-one-back {
+    margin-top: 10px;
+    background-color: #009688;
+    transition: margin-top 1s ease;
+    min-height: 190px;
+}
+
+.ass-one-back:hover {
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+section .contianer .ass-one-back p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+section .contianer .ass-one-back .child-sec {
+    display: flex;
+    background-color: #00645a;
+    transition: margin-top 1s 0.5s ease;
+}
+
+.ass-one-back:hover .child-sec {
+    margin-top: 50px;
+}
+
+
+
+
+/*Assignment 02*/
+.ass-sec .contianer {
+    padding-top: 40px;
+    position: relative;
+}
+
+
+
+.ass-sec .contianer::after {
+    --right-elepadding: 340px;
+    content: "Elzero";
+    position: absolute;
+    top: 36.5px;
+    left: calc(100%/2 - (42.5px + var(--right-elepadding)));
+    background-color: #00645a;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 20px var(--right-elepadding) 20px var(--right-elepadding);
+    cursor: pointer;
+    transition: top 1s ease;
+
+}
+
+
+.ass-sec .contianer:hover::after {
+    top: 10px;
+}
+
+
+
+.ass-sec .contianer .hidd {
+    opacity: 0;
+    margin: 0;
+    transition: opacity 1s 0.5s ease, margin 1s 0.4s ease;
+}
+
+
+.ass-sec .contianer:hover .hidd {
+    opacity: 100%;
+    margin: 50px 0 0;
+}
+
+
+/* Assignment 03*/
+
+main .ass-thi .contianer .ass-three-back {
+    padding: 10px;
+    background-color: #01685d;
+}
+
+main .ass-thi .ass-three-back div {
+
+    padding: 10px 30px;
+    border: solid 5px var(--main-Color, black);
+    color: var(--main-Color, red);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}

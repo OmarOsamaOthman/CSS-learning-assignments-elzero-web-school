@@ -1,0 +1,138 @@
+body {
+    font-family: serif, Arial, Helvetica, serif;
+    background-color: #175dc6;
+    color: #FFF;
+
+}
+
+:root {
+    --mainColor: #009688;
+    --first-ele-background-color: #18815e;
+    --second-ele-background-color: #C78C18;
+    --first-border-color: yellowgreen;
+    --second-border-color: #ffc272;
+    --mainPadding: 10px;
+    --third-ass-main-color: #009688;
+    --third-ass-main-padding: 10px;
+    --main-Color: #009688;
+    --main-Padding: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+header h1 {
+    background-color: var(--first-ele-background-color, blue);
+    width: fit-content;
+    margin: auto;
+    padding: 7px 13px;
+    border-right: solid var(--first-border-color, yellowgreen) 5px;
+    border-left: solid var(--first-border-color, yellowgreen) 5px;
+    border-radius: 7px;
+}
+
+section .ass-h {
+    background-color: var(--second-ele-background-color, green);
+    width: fit-content;
+    padding: 7px 15px;
+    border-right: solid var(--second-border-color, yellowgreen) 5px;
+    border-left: solid var(--second-border-color, yellowgreen) 5px;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+main section article {
+    background-color: var(--first-ele-background-color, blue);
+    padding: 20px;
+    margin: 0 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ass-one .content div {
+    display: flex;
+    padding: 5px;
+    background-color: #EEE;
+    flex-basis: 600px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10.4px 0 0 0 #673ab7, -9.5px 0 0 0 #f44336;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.fir p::first-letter {
+    font-size: 30px;
+    color: #f44336;
+}
+
+.ass-one .content div:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    width: calc(100% + 20px);
+    background-image: linear-gradient(to right, #f44336 20%, #2196f3 20%, #2196f3 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%);
+}
+
+.ass-one .content div::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    width: calc(100% + 20px);
+    background-image: linear-gradient(to right, #f44336 20%, #2196f3 20%, #2196f3 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%);
+}
+
+
+.ass-two form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 150px;
+
+}
+
+.ass-two .content div {
+    position: relative;
+}
+
+.ass-two .content input {
+    padding: 10px;
+    display: flex;
+    width: 500px;
+    height: 35px;
+    border: solid transparent 3px;
+    border-radius: 3px;
+    outline: none;
+    caret-color: #f44336;
+}
+
+.ass-two .content input:focus {
+    padding: 12px;
+    box-shadow: 0 0 10px 0px #ffffff;
+    border: 1px solid #0a0096;
+}
+
+.ass-two .content div::after {
+    z-index: 1000;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #f44336 50%, #0a0096 50%);
+}
